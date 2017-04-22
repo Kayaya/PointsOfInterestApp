@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_poi"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingBottom="0px"
+    android:paddingLeft="0px"
+    android:paddingRight="0px"
+    android:paddingTop="0px"
+    tools:context="com.example.afonso.pointsofinterestapp.AddPOIActivity">
+
+    <TextView
+        android:text="Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/et_name"
+        android:paddingLeft="10px"
+        android:layout_marginTop="5px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text|textPersonName"
+        android:ems="10"
+        android:id="@+id/et_name"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="10px"
+
+        />
+
+    <TextView
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textView11"
+        android:paddingLeft="10px"
+        android:layout_below="@+id/frameLayout" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text|textPersonName"
+        android:ems="10"
+        android:id="@+id/et_type"
+        android:layout_alignBaseline="@+id/et_name"
+        android:layout_alignBottom="@+id/et_name"
+        android:layout_alignLeft="@+id/textView12"
+        android:paddingRight="10px"
+        android:layout_alignStart="@+id/textView12" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="New Point Of Interest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:background="@android:color/black"
+            android:paddingTop="5px"
+            android:paddingBottom="5px"
+            android:paddingLeft="1px"
+            android:paddingRight="0px"
+            android:elevation="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+
+    <TextView
+        android:text="Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:layout_above="@+id/et_type"
+        android:layout_toRightOf="@+id/et_name"
+        android:layout_toEndOf="@+id/et_name"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp" />
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_cancel"
+        android:paddingLeft="25px"
+        android:paddingRight="25px"
+        android:layout_alignBaseline="@+id/button_add"
+        android:layout_alignBottom="@+id/button_add"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/button_add"
+        android:paddingLeft="60px"
+        android:paddingRight="60px"
+        android:layout_below="@+id/et_description"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/et_description"
+        android:hint="Write here!..."
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
+

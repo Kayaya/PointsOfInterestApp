@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">PointsOfInterest App</string>
+    <string name="app_name">Points Of Interest (POI)</string>
+    <string name="add">Add new POI</string>
+    <string name="save">Save POI</string>
 </resources>
